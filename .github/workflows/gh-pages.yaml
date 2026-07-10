@@ -30,7 +30,7 @@ jobs:
       
       - name: Install and Build
         run: |
-          pnpm ci
+          pnpm install --frozen-lockfile
           pnpm run build
 
       - name: Deploy
